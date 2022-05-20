@@ -1,4 +1,4 @@
-##Suggestion slot test 2(DDBMS)
+# Suggestion slot test 2(DDBMS)
 
                               
 **1.	A distributed database has which of the following advantages over a centralized database?**
@@ -99,7 +99,7 @@ D. Each transaction may proceed without coordination across the network.
 
 **1.	What are advantages and disadvantages of Distributed DBMS**
 
-**Ans: The distributed database management system contains the data in multiple locations. That can be in different systems in the same place or across different geographical locations.
+**Ans:** The distributed database management system contains the data in multiple locations. That can be in different systems in the same place or across different geographical locations.
 
 As shown in the below example −
 
@@ -124,13 +124,13 @@ The distributed database is quite complex and it is difficult to make sure that 
 This database is more expensive as it is complex and hence, difficult to maintain.
 It is difficult to provide security in a distributed database as the database needs to be secured at all the locations it is stored. Moreover, the infrastructure connecting all the nodes in a distributed database also needs to be secured.
 It is difficult to maintain data integrity in the distributed database because of its nature. There can also be data redundancy in the database as it is stored at multiple locations.
-The distributed database is complicated and it is difficult to find people with the necessary experience who can manage and maintain it.** 
+The distributed database is complicated and it is difficult to find people with the necessary experience who can manage and maintain it.
 
 <br/>
 
 **2.	What are the objectives of Distributed Query Processing?**
 
-**Ans: A Query processing in a distributed database management system requires the transmission of data between the computers in a network. A distribution strategy for a query is the ordering of data transmissions and local data processing in a database system. Generally, a query in Distributed DBMS requires data from multiple sites, and this need for data from different sites is called the transmission of data that causes communication costs. Query processing in DBMS is different from query processing in centralized DBMS due to this communication cost of data transfer over the network. The transmission cost is low when sites are connected through high-speed Networks and is quite significant in other networks. 
+**Ans:** A Query processing in a distributed database management system requires the transmission of data between the computers in a network. A distribution strategy for a query is the ordering of data transmissions and local data processing in a database system. Generally, a query in Distributed DBMS requires data from multiple sites, and this need for data from different sites is called the transmission of data that causes communication costs. Query processing in DBMS is different from query processing in centralized DBMS due to this communication cost of data transfer over the network. The transmission cost is low when sites are connected through high-speed Networks and is quite significant in other networks. 
 
 1. Costs (Transfer of data) of Distributed Query processing :
 
@@ -184,13 +184,13 @@ Answer : The following strategy can be used to execute the query.
 
 Select all (or Project) the attributes of the EMPLOYEE table at site 1 and then transfer them to site 3. For this, we will transfer NAME, DID(EMPLOYEE) and the size is 25 * 1000 = 25000 bytes.
 Transfer the table DEPARTMENT to site 3 and join the projected attributes of EMPLOYEE with this table. The size of the DEPARTMENT table is 25 * 50 = 1250
-Applying the above scheme, the amount of data transferred to execute the query will be 25000 + 1250 = 26250 bytes.**
+Applying the above scheme, the amount of data transferred to execute the query will be 25000 + 1250 = 26250 bytes.
 
 <br/>
 
 **3.	Explain the reference architecture of DDBMS .**
 
-**Ans: Reference Architecture of Distributed DBMSs
+**Ans:** Reference Architecture of Distributed DBMSs
 
 Data is distributed system are usually fragmented and replicated.Considering this fragmentation and replication issue
 
@@ -218,13 +218,13 @@ To handle fragmentation and replication issues,the logicalorganization of data a
 
 The GCS is the union of all local conceptual schemas thus the local conceptual schemas are mappings of the global schema onto each site.This mapping is done by local mapping schemas.
 
-This architecture provides a very general conceptual framework for understanding distributed database.**
+This architecture provides a very general conceptual framework for understanding distributed database.
 
 <br/>
 
 **4.	What are the various concurrency control techniques? Compare Lock based Concurrency Control strategies in detail.**
 
-**Ans: There are three concurrency control techniques which are as follows:
+**Ans:** There are three concurrency control techniques which are as follows:
 
 Locking method
 
@@ -285,12 +285,11 @@ Validation phase: At the start of this phase, transaction Ti is associated with 
 Write phase: In this phase, the system copies the modifications made by Ti in its workspace to the database only if it succeeds in the validation phase. At the end of this phase, Ti is associated with a timestamp Finish (Ti).
 
 
-**
 
 <br/>
 **5.	Explain the phases of query processing in distributed database.**
 
-**Ans: Query processing refers to the range of activities involved in extracting data from a database. The activities include translation of queries in high-level database language, into expressions that can be used at the physical levelof the file system, a variety of query-optimization transformations, and actual evaluation of queries. The step involved in processing a query appear in figure below:
+**Ans:** Query processing refers to the range of activities involved in extracting data from a database. The activities include translation of queries in high-level database language, into expressions that can be used at the physical levelof the file system, a variety of query-optimization transformations, and actual evaluation of queries. The step involved in processing a query appear in figure below:
 
 enter image description here
 
@@ -314,12 +313,11 @@ To implement the preceding selection, we can search every tuple in account to fi
 
 A relational-algebra operation annotated with instructions on how to evaluate it is called an evaluation primitive. A sequence balance of primitive operations that can be used to evaluate a query is a query-execution plan or query-evaluation plan. Figure illustrates an evaluation plan for our account example query, in which a particular index (denoted in the figure as "index 1") is specified for the selection operation. The query-execution engine takes a query-evaluation plan, executes that plan, and returns the answers to the query. The different evaluation plans for a give query can have different costs.
 
-enter image description here**
 
 <br/>
 **6.	What is horizontal and vertical fragmentation? What are the types of horizontal fragmentation.**
 
-**Ans: Horizontal fragmentation
+**Ans:** Horizontal fragmentation
 
 It refers to the division of a relation into subsets (fragments) of tuples (rows). Each fragment is stored at a different node, and each fragment has unique rows. However, the unique rows all have the same attributes (columns). In short, each fragment represents the equivalent of a SELECT statement, with the WHERE clause on a single attribute.
 
@@ -337,12 +335,12 @@ e.g. Employee table is fragmented for Department No.
 
 ii. Derived Horizontal Fragmentation
 
-Fragmentation of the secondary relations that are dependent on the primary relation; related with foreign keys.**
+Fragmentation of the secondary relations that are dependent on the primary relation; related with foreign keys.
 
 <br/>
 **7.	Explain the characteristics of distributed transaction management system & its goals.**
 
-**Ans: Distributed Systems is an upcoming area in computer science and has the ability to have a large impact on the many aspects in  the medical, scientific, financial and commercial sector.
+**Ans:** Distributed Systems is an upcoming area in computer science and has the ability to have a large impact on the many aspects in  the medical, scientific, financial and commercial sector.
 
 The most commonly used definition for a distributed system is, a system comprised of geographically dispersed computing components interacting on a hardware or software level. The rise in interest for distributed computing can be attributed to two major factors. The first factor is the creation and advancements in local and wide area networks which allow for large amounts of data to be transmitted over great distances in a short period of time.
 
@@ -371,13 +369,13 @@ An open distributed system must also be extensible.
 Scalability is one of the most important goals which are measured along three different dimensions.
 First, a system can be scalable with respect to its size which can add more user and resources to a system.
 Second, users and resources can be geographically apart.
-Third, it is possible to manage even if many administrative organizations are spanned.**
+Third, it is possible to manage even if many administrative organizations are spanned.
 
 <br/>
 
 **8.	What problem can occur in a distributed system due to the failure of link and partitioning of the network? What are the ways by which recovery can take place?**
 
-**Ans: DSM implements distributed systems shared memory model in an exceedingly distributed system, that hasn’t any physically shared memory. The shared model provides a virtual address space shared between any numbers of nodes. The DSM system hides the remote communication mechanism from the appliance author, protecting the programming ease and quality typical of shared-memory systems.
+**Ans:** DSM implements distributed systems shared memory model in an exceedingly distributed system, that hasn’t any physically shared memory. The shared model provides a virtual address space shared between any numbers of nodes. The DSM system hides the remote communication mechanism from the appliance author, protecting the programming ease and quality typical of shared-memory systems.
 
 
 
@@ -418,6 +416,6 @@ A web site cannot communicate with another operational site.
 Errors/Faults –
 Failure of shift nodes or communication links.
 Recovery/Design strategies –
-Reroute, error-resistant communication protocols.**
+Reroute, error-resistant communication protocols.
 
 <br/>
